@@ -1,0 +1,76 @@
+.gn-auth-wrapper {
+    background-color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    padding: 20px;
+}
+
+.gn-auth-card {
+    width: 100%;
+    max-width: 420px; /* Thoda wide for 2-column inputs */
+}
+
+/* Back Button */
+.back-btn-circle {
+    background: white;
+    border: 1.5px solid #333;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-bottom: 25px;
+}
+
+/* Sharp Lined Inputs */
+.gn-input-line-wrapper {
+    display: flex;
+    align-items: center;
+    border: 1.5px solid #1a1a1a;
+    border-radius: 6px;
+    padding: 10px 14px;
+}
+
+.gn-input-line-wrapper input {
+    border: none;
+    outline: none;
+    width: 100%;
+    padding-left: 10px;
+    font-size: 14px;
+}
+
+/* Stepper */
+.mini-stepper { display: flex; gap: 6px; }
+.m-step { height: 4px; flex: 1; background: #eee; border-radius: 2px; }
+.m-step.active { background: #31a9db; }
+
+/* Buttons */
+.gn-prime-btn {
+    background-color: #31a9db;
+    color: white;
+    border: none;
+    padding: 14px;
+    font-weight: 700;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.gn-social-btn {
+    width: 100%;
+    background: white;
+    border: 1.5px solid #333;
+    padding: 11px;
+    border-radius: 6px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.underline { text-decoration: underline; cursor: pointer; }

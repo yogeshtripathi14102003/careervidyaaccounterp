@@ -1,0 +1,27 @@
+/* Poora Navbar Container */
+.navbar {
+    position: sticky; 
+    top: 0;
+    width: 100%;
+    /* Navbar ka z-index hamesha Slider se zyada hona chahiye */
+    z-index: 1050 !important; 
+    background-color: var(--text-light); /* Variable use karein */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* Mobile Menu (Jab toggle khule) */
+@media (max-width: 991px) {
+    .navbar-collapse {
+        /* Ise absolute karne se ye slider ke UPAR aayega, use neeche nahi dhakelega */
+        position: absolute; 
+        top: 100%; /* Navbar ke theek neeche se shuru hoga */
+        left: 0;
+        width: 100%;
+        background-color: #ffffff; /* Transparent mat rakhein */
+        z-index: 9999 !important;
+        padding: 20px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+}
+
+

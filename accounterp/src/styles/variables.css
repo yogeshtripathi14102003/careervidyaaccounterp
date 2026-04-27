@@ -1,0 +1,36 @@
+:root {
+  /* Colors */
+  --primary-color: #001a33;
+  --secondary-color: #00aaff;
+  --text-main: #333333;
+  --text-light: #ffffff;
+  --text-gray: #bdc3c7;
+
+  /* Fonts */
+  --font-main: 'Poppins', sans-serif;
+  --font-heading: 'Montserrat', sans-serif;
+  
+  /* Font Sizes */
+  --size-h1: 2.5rem;
+  --size-p: 1rem;
+}
+
+/*for mode */
+
+:root {
+  /* Light Mode Colors */
+  --bg-main: #ffffff;
+  --text-main: #000000;
+}
+
+.dark-theme {
+  /* Dark Mode Colors */
+  --bg-main: #121212;
+  --text-main: #ffffff;
+}
+
+body {
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  transition: all 0.3s ease;
+}

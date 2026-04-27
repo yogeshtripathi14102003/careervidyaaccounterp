@@ -1,0 +1,110 @@
+/* 1. Root Variables */
+:root {
+  --primary: #4f46e5;
+  --bg-main: #f1f5f9;
+  --bg-card: #ffffff;
+  --sidebar-bg: #1e293b;
+  --text-main: #1e293b;
+  --text-muted: #64748b;
+  --border: #e2e8f0;
+  --navbar-bg: #ffffff;
+  --nav-hover: rgba(255, 255, 255, 0.1);
+}
+
+body.dark-theme {
+  --bg-main: #0f172a;
+  --bg-card: #1e293b;
+  --sidebar-bg: #020617;
+  --text-main: #f1f5f9;
+  --text-muted: #94a3b8;
+  --border: #334155;
+  --navbar-bg: #1e293b;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+
+.dashboard-container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background-color: var(--bg-main);
+}
+
+/* Sidebar Fixes */
+.sidebar {
+  background-color: var(--sidebar-bg);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  transition: width 0.3s ease;
+  z-index: 100;
+}
+.sidebar.open { width: 260px; }
+.sidebar.collapsed { width: 80px; }
+
+.sidebar-header { padding: 20px; border-bottom: 1px solid rgba(255,255,255,0.1); }
+.logo { display: flex; align-items: center; gap: 12px; cursor: pointer; }
+.logo-icon { background: var(--primary); padding: 5px 8px; border-radius: 6px; font-weight: bold; }
+
+.sidebar-nav { flex: 1; padding: 20px 10px; display: flex; flex-direction: column; gap: 5px; }
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  color: #94a3b8;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: 0.2s;
+}
+.nav-item:hover { background: var(--nav-hover); color: white; }
+.nav-item.active { background: var(--primary); color: white; }
+
+/* Logout Button Logic */
+.sidebar-footer {
+  margin-top: auto;
+  padding: 20px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  color: #fca5a5;
+  transition: background 0.3s;
+}
+.sidebar-footer:hover { background: rgba(239, 68, 68, 0.1); }
+
+/* Layout Main Section */
+.main-section { flex: 1; display: flex; flex-direction: column; overflow: hidden; }
+
+.top-navbar {
+  height: 70px;
+  background: var(--navbar-bg);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  border-bottom: 1px solid var(--border);
+}
+
+.content-area {
+  flex: 1;
+  padding: 30px;
+  overflow-y: auto;
+  background-color: var(--bg-main);
+}
+
+.icon-btn {
+  background: none; border: 1px solid var(--border); padding: 8px; border-radius: 8px;
+  cursor: pointer; color: var(--text-muted); display: flex; align-items: center;
+}
+
+.profile-pill {
+  display: flex; align-items: center; gap: 10px; background: var(--bg-main);
+  padding: 5px 15px; border-radius: 50px; border: 1px solid var(--border);
+}
+
+.profile-text { display: flex; flexDirection: column; font-size: 12px; }
+.user-name { font-weight: 600; color: var(--text-main); }
+.user-role { color: var(--text-muted); }

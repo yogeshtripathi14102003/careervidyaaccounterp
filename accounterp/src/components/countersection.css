@@ -1,0 +1,48 @@
+.simple-counter-section {
+  background-color: #001a33; /* Dark Blue */
+  padding: 60px 0;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.counter-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.counter-card {
+  text-align: center;
+  flex: 1;
+  min-width: 200px;
+  padding: 20px;
+}
+
+.counter-icon {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.counter-number {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 5px 0;
+  color: #00aaff; /* Light Blue */
+}
+
+.counter-title {
+  font-size: 1.1rem;
+  color: #bdc3c7;
+  text-transform: uppercase;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .counter-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}

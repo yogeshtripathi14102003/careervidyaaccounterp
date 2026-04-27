@@ -1,0 +1,77 @@
+.custom-service-wrapper {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+.service-flex-container {
+  display: flex;
+  height: 450px; /* Aap height adjust kar sakte hain */
+  width: 100%;
+  gap: 2px; /* Cards ke beech ki patli line */
+}
+
+.service-item {
+  flex: 1;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  transition: all 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+  cursor: pointer;
+}
+
+/* Hover Effect: Jab card par mouse jaye to wo thoda bada ho jaye */
+.service-item:hover {
+  flex: 1.5;
+}
+
+.service-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* Dark Blue Gradient Overlay */
+  background: linear-gradient(to bottom, rgba(0, 31, 63, 0.6), rgba(0, 31, 63, 0.9));
+  display: flex;
+  align-items: flex-end; /* Text neeche dikhane ke liye */
+  padding: 30px 20px;
+  transition: background 0.4s ease;
+}
+
+.service-item:hover .service-overlay {
+  background: rgba(0, 31, 63, 0.8); /* Hover par thoda aur dark */
+}
+
+.service-text-content {
+  text-align: center;
+  width: 100%;
+}
+
+.service-title {
+  color: #ffffff;
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  text-transform: capitalize;
+}
+
+.service-desc {
+  color: #d1d1d1;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  opacity: 0.9;
+}
+
+/* Mobile View: Cards ek ke niche ek aa jayenge */
+@media (max-width: 768px) {
+  .service-flex-container {
+    flex-direction: column;
+    height: auto;
+  }
+  .service-item {
+    height: 300px;
+    width: 100%;
+  }
+}

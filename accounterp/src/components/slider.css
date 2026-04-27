@@ -1,0 +1,11 @@
+/* App.css ya aapki CSS file mein */
+.carousel-item img {
+  height: 60vh; /* Mobile/Desktop par screen ki 60% height lega */
+  object-fit: cover; /* Image cut jayegi par stretch nahi hogi */
+}
+
+@media (max-width: 768px) {
+  .carousel-item img {
+    height: 30vh; /* Chhoti screens (mobile) ke liye height kam kar di */
+  }
+}

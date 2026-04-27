@@ -1,0 +1,152 @@
+/* Font setup */
+.gn-login-wrapper {
+  background-color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Inter', sans-serif;
+  padding: 20px;
+}
+
+.gn-login-card {
+  width: 100%;
+  max-width: 400px;
+  position: relative;
+}
+
+.back-btn {
+  background: none;
+  border: 1px solid #eee;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+.gn-header h2 {
+  font-size: 24px;
+  font-weight: 800;
+  color: #1a1a1a;
+  margin-bottom: 30px;
+}
+
+.gn-input-group {
+  margin-bottom: 20px;
+}
+
+.gn-input-group label {
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.gn-input-wrapper {
+  display: flex;
+  align-items: center;
+  border: 1.5px solid #333; /* Dark Sharp Border */
+  border-radius: 6px; /* Chhota radius */
+  padding: 10px 15px;
+  transition: 0.2s;
+}
+
+.gn-input-wrapper:focus-within {
+  border-color: #00acee;
+}
+
+.gn-input-wrapper input {
+  border: none;
+  outline: none;
+  width: 100%;
+  padding-left: 10px;
+  font-size: 15px;
+}
+
+.input-icon { color: #333; }
+
+.eye-btn {
+  background: none;
+  border: none;
+  color: #ccc;
+  cursor: pointer;
+}
+
+.gn-forgot {
+  display: block;
+  font-size: 12px;
+  color: #666;
+  text-decoration: none;
+  margin-top: 8px;
+}
+
+.gn-submit-btn {
+  width: 100%;
+  background-color: #31a9db; /* GigNation Blue */
+  color: white;
+  border: none;
+  padding: 14px;
+  font-weight: 700;
+  font-size: 16px;
+  border-radius: 6px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.gn-switch {
+  text-align: center;
+  font-size: 13px;
+  margin-top: 20px;
+  color: #666;
+}
+
+.gn-switch span {
+  color: #31a9db;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* Divider */
+.gn-divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 30px 0;
+  color: #ccc;
+  font-size: 12px;
+}
+
+.gn-divider::before, .gn-divider::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid #eee;
+}
+
+.gn-divider span { padding: 0 10px; }
+
+/* Social Buttons */
+.gn-social-btn {
+  width: 100%;
+  background: white;
+  border: 1.5px solid #333;
+  padding: 12px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+
+.gn-social-btn img {
+  width: 20px;
+  height: 20px;
+}
